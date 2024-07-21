@@ -27,5 +27,6 @@ with open("2015/Day 3/input.txt") as f:
         else:
             houses_visited.add(current_position)
 
-        
+    
     print(f"The total number of households with presents is is {len(houses_visited)}")
+    print(f"The number of extra-lucky households this year is {len(houses_with_multiple_presents)}")
