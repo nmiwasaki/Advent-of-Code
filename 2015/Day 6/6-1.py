@@ -42,13 +42,9 @@ def update_lights(lights: List[bool], instruction: str, x0: int, y0: int, x1: in
     else:
         print("INSTRUCTION ERROR")
     
-
     for i in range(x0, x1 + 1):
         for j in range(y0, y1 + 1):
             lights[i][j] = operation(lights[i][j])
-
-
-
 
 with open("2015/Day 6/input.txt") as f:
     instructions = f.readlines()
@@ -60,7 +56,6 @@ with open("2015/Day 6/input.txt") as f:
             column_vector.append(False)
         lights.append(column_vector)
     # The lights all start turned off.
-
 
     pattern = r"([a-z ]+) (\d+),(\d+) through (\d+),(\d+)"
     for instruction in instructions:
